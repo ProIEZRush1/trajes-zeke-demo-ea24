@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajes Zeke · Trajes de adulto y de niño en Lomas de Chapultepec</title>
+<meta name="description" content="Trajes clásicos y modernos para adulto y para niño. Aparta tu traje por WhatsApp y recógelo en Sierra Guadarrama 90.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%2210%22 fill=%22%230f1c2e%22/%3E%3Cpath d=%22M12 13h16L12 27h16%22 fill=%22none%22 stroke=%22%23c9a96a%22 stroke-width=%223.2%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f1c2e; --navy-2:#182a43; --navy-3:#24395a;
+    --oro:#c9a96a; --oro-h:#b8955a; --oro-c:#f3ead8;
+    --marfil:#f8f4ec; --blanco:#fffdf9;
+    --tinta:#141c2a; --tinta-2:#55606f; --linea:#e7dfd0;
+    --wa:#1fa855; --wa-h:#178a45;
+    --r:16px; --sombra:0 1px 2px rgba(15,28,46,.05), 0 14px 34px -16px rgba(15,28,46,.3);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--marfil);color:var(--tinta);-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+  a{color:inherit}
+  h1,h2,h3,.logo{font-family:"Cormorant Garamond",Georgia,serif;letter-spacing:-.005em}
+  .num{font-family:"Playfair Display",Georgia,serif!important;font-weight:600}
+  section{scroll-margin-top:66px}
+  .cont{max-width:1160px;margin:0 auto;padding:0 20px}
+  svg.i{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  .aviso-demo{background:#080f1a;color:#d9dee6;font-size:13px;text-align:center;padding:8px 16px}
+  .aviso-demo a{color:var(--oro);font-weight:600;text-decoration:none}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(15,28,46,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,169,106,.22);color:#fff}
+  .barra{display:flex;align-items:center;gap:24px;height:70px}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:27px;font-weight:600;line-height:1}
+  .logo .t1{color:#fff} .logo .t2{color:var(--oro)}
+  .mono{width:36px;height:36px;flex:none;border-radius:50%;border:1.5px solid var(--oro);display:grid;place-items:center;color:var(--oro);font:600 22px/1 "Cormorant Garamond",serif;padding-bottom:2px}
+  nav.menu{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500}
+  nav.menu a{text-decoration:none;color:#c8cfda} nav.menu a:hover{color:var(--oro)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;font:600 15px/1 Inter,sans-serif;text-decoration:none;border-radius:999px;padding:14px 22px;transition:.15s}
+  .btn-wa{background:var(--wa);color:#fff} .btn-wa:hover{background:var(--wa-h)}
+  .btn-oro{background:var(--oro);color:var(--navy)} .btn-oro:hover{background:#d8bb80}
+  .btn-linea{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.45)} .btn-linea:hover{box-shadow:inset 0 0 0 1.5px var(--oro);color:var(--oro)}
+  .btn-claro{background:var(--blanco);color:var(--tinta);box-shadow:inset 0 0 0 1.5px var(--linea)} .btn-claro:hover{box-shadow:inset 0 0 0 1.5px var(--oro-h)}
+  .barra .btn{padding:11px 18px;font-size:14px}
+
+  .hero{position:relative;overflow:hidden;background:var(--navy);color:#fff}
+  .hero-foto{position:absolute;inset:0;background:url(hero.jpg) center right/cover no-repeat}
+  .hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,28,46,.97) 0%,rgba(15,28,46,.9) 34%,rgba(15,28,46,.5) 58%,rgba(15,28,46,.1) 82%)}
+  .hero .cont{position:relative;padding-top:96px;padding-bottom:104px}
+  .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,169,106,.5);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--oro);background:rgba(15,28,46,.4)}
+  .hero h1{font-size:clamp(44px,6vw,74px);line-height:1;font-weight:600;max-width:640px;margin:22px 0 18px}
+  .hero h1 em{font-style:italic;color:var(--oro)}
+  .hero p.sub{font-size:18px;color:#d3d9e2;max-width:520px}
+  .hero .acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .sellos{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:36px;font-size:14px;font-weight:600;color:#d3d9e2}
+  .sellos span{display:inline-flex;align-items:center;gap:7px}
+  .sellos svg{color:var(--oro)}
+
+  section{padding:84px 0}
+  .titulo{max-width:660px;margin-bottom:40px}
+  .titulo .eti{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--oro-h)}
+  .titulo h2{font-size:clamp(34px,4vw,48px);line-height:1.05;margin:10px 0 12px;font-weight:600}
+  .titulo p{color:var(--tinta-2);font-size:17px}
+
+  .catalogo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .linea-c{background:var(--blanco);border:1px solid var(--linea);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:18px;box-shadow:var(--sombra)}
+  .linea-c .cab{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .linea-c h3{font-size:32px;font-weight:600;line-height:1.05}
+  .linea-c .cab small{display:block;font:500 14px Inter,sans-serif;color:var(--tinta-2);margin-top:4px}
+  .nuevo{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--oro-c);color:#8a6a2c;border-radius:999px;padding:6px 11px;white-space:nowrap}
+  .precios{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .precio{border:1px solid var(--linea);border-radius:14px;padding:14px 16px;background:var(--marfil)}
+  .precio span{display:block;font-size:13px;font-weight:600;color:var(--tinta-2)}
+  .precio b{font:600 26px/1.2 "Playfair Display",Georgia,serif;color:var(--navy)}
+  .completo{font-size:14px;color:var(--tinta-2)} .completo b{color:var(--tinta)}
+  .sub-t{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-2);margin-bottom:8px}
+  .tallas{display:flex;flex-wrap:wrap;gap:7px}
+  .tallas span{min-width:40px;text-align:center;padding:6px 8px;border:1px solid var(--linea);border-radius:9px;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;background:#fff}
+  .colores{display:flex;flex-wrap:wrap;gap:14px}
+  .color{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--tinta-2)}
+  .muestra{width:24px;height:24px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15),0 0 0 2px #fff,0 0 0 3px var(--linea);flex:none}
+  .linea-c .btn{align-self:flex-start}
+  .nota-precios{margin-top:18px;font-size:14px;color:var(--tinta-2);display:flex;gap:8px;align-items:flex-start}
+  .nota-precios svg{color:var(--oro-h);margin-top:1px}
+
+  .aparta{background:var(--navy);color:#fff}
+  .aparta .titulo .eti{color:var(--oro)}
+  .aparta .titulo p{color:#c4ccd8}
+  .a-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:start}
+  .lista-a{list-style:none;display:grid;gap:16px;margin-top:8px}
+  .lista-a li{display:flex;gap:14px}
+  .lista-a .n{width:34px;height:34px;flex:none;border-radius:50%;border:1.5px solid var(--oro);color:var(--oro);display:grid;place-items:center;font:600 15px "Playfair Display",Georgia,serif}
+  .lista-a b{display:block;font-size:16px}
+  .lista-a span{color:#c4ccd8;font-size:15px}
+
+  .form{background:var(--marfil);color:var(--tinta);border-radius:22px;padding:24px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .form h3{font-size:30px;font-weight:600;line-height:1.1}
+  .form .nota{font-size:13px;color:var(--tinta-2);margin:4px 0 16px}
+  .persona{background:var(--blanco);border:1px solid var(--linea);border-radius:16px;padding:14px;margin-bottom:12px}
+  .p-cab{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+  .p-cab b{font:600 20px "Cormorant Garamond",serif}
+  .quitar{all:unset;cursor:pointer;font-size:13px;font-weight:600;color:var(--tinta-2);padding:4px 6px;border-radius:8px}
+  .quitar:hover{color:#b3261e} .quitar:focus-visible{outline:2px solid var(--oro-h)}
+  .seg{display:grid;grid-template-columns:1fr 1fr;background:var(--marfil);border:1px solid var(--linea);border-radius:12px;padding:3px;margin-bottom:10px}
+  .seg button{all:unset;cursor:pointer;text-align:center;padding:8px 6px;border-radius:9px;font-size:14px;font-weight:600;color:var(--tinta-2)}
+  .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
+  .seg button:focus-visible{outline:2px solid var(--oro-h)}
+  .p-fila{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center;margin-bottom:10px}
+  .p-fila>label,.p-fila>span{font-size:13px;font-weight:600;color:var(--tinta-2)}
+  select,input{font:15px Inter,sans-serif;padding:9px 11px;border-radius:11px;border:1px solid var(--linea);background:#fff;color:var(--tinta);width:100%;min-width:0}
+  select:focus,input:focus{outline:2px solid var(--oro-h);border-color:transparent}
+  .swatches{display:flex;gap:8px;flex-wrap:wrap}
+  .sw{all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;padding:4px 9px 4px 4px;border-radius:999px;border:1px solid var(--linea);font-size:13px;font-weight:600;color:var(--tinta-2);background:#fff}
+  .sw i{width:20px;height:20px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+  .sw[aria-pressed="true"]{border-color:var(--navy);color:var(--navy);box-shadow:0 0 0 1px var(--navy)}
+  .sw:focus-visible{outline:2px solid var(--oro-h)}
+  .piezas{display:flex;gap:8px;flex-wrap:wrap}
+  .pz{display:flex;align-items:center;gap:7px;border:1px solid var(--linea);border-radius:11px;padding:7px 10px;font-size:14px;font-weight:500;cursor:pointer;background:#fff}
+  .pz input{width:17px;height:17px;accent-color:var(--navy);padding:0}
+  .pz small{color:var(--tinta-2);font-size:13px}
+  .p-pie{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px dashed var(--linea);padding-top:10px}
+  .paso{display:flex;align-items:center;background:var(--marfil);border:1px solid var(--linea);border-radius:999px}
+  .paso button{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;font-size:18px;font-weight:600;color:var(--navy)}
+  .paso button:focus-visible{outline:2px solid var(--oro-h);border-radius:50%}
+  .paso output{min-width:28px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+  .subt{font-weight:700;font-variant-numeric:tabular-nums;font-size:16px}
+  .subt small{display:block;font-weight:500;font-size:12px;color:var(--tinta-2);text-align:right}
+  .agregar{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:11px;border-radius:14px;border:1.5px dashed #cdbf9f;color:#7a5f2a;font-weight:600;font-size:14px;margin-bottom:14px}
+  .agregar:hover{background:var(--oro-c)} .agregar:focus-visible{outline:2px solid var(--oro-h)}
+  .campos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  .campos label{font-size:13px;font-weight:600;color:var(--tinta-2);display:grid;gap:6px}
+  .total{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:var(--navy);color:#fff;border-radius:14px;padding:13px 16px;margin-bottom:12px}
+  .total span{font-size:14px;color:#c4ccd8}
+  .total b{font:600 25px/1 "Playfair Display",Georgia,serif;color:var(--oro);font-variant-numeric:tabular-nums}
+  .form .btn{width:100%}
+  .form .btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+  .form .aclara{font-size:12.5px;color:var(--tinta-2);margin-top:10px;text-align:center}
+
+  .pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .p{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:26px}
+  .p .ico{width:46px;height:46px;border-radius:50%;background:var(--navy);color:var(--oro);display:grid;place-items:center;margin-bottom:14px}
+  .p h3{font-size:25px;font-weight:600;margin-bottom:6px}
+  .p p{color:var(--tinta-2);font-size:15px}
+
+  .visita{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}
+  .tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:18px}
+  .dato{display:flex;gap:14px}
+  .dato svg{color:var(--oro-h);margin-top:2px}
+  .dato b{display:block}
+  .dato span{color:var(--tinta-2);font-size:15px}
+  .mapa{border-radius:var(--r);overflow:hidden;border:1px solid var(--linea);min-height:320px;background:var(--oro-c)}
+  .mapa iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+  .cta{background:linear-gradient(120deg,var(--navy),var(--navy-3));color:#fff;border-radius:28px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}
+  .cta::before{content:"";position:absolute;inset:auto -10% -60% -10%;height:120%;background:radial-gradient(closest-side,rgba(201,169,106,.22),transparent)}
+  .cta>*{position:relative}
+  .cta h2{font-size:clamp(32px,4vw,46px);line-height:1.05;margin-bottom:10px;font-weight:600}
+  .cta p{color:#d3d9e2;font-size:17px;margin-bottom:26px}
+
+  footer{padding:40px 0 110px;color:var(--tinta-2);font-size:14px}
+  .pie{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;border-top:1px solid var(--linea);padding-top:26px}
+  .pie .logo{font-size:23px} .pie .logo .t1{color:var(--navy)}
+  .pie a{text-decoration:none;font-weight:600;color:var(--oro-h)}
+
+  .flota{position:fixed;right:20px;bottom:20px;z-index:30;box-shadow:0 10px 26px -8px rgba(31,168,85,.6)}
+
+  @media (max-width:920px){
+    nav.menu{display:none}
+    .barra .btn{margin-left:auto}
+    .catalogo,.a-grid,.visita{grid-template-columns:1fr}
+    .pasos{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:620px){
+    .cont{padding:0 16px}
+    .barra{height:62px;gap:12px}
+    .logo{font-size:23px} .mono{width:32px;height:32px;font-size:20px}
+    .barra .btn span{display:none}
+    .hero-foto{background-position:72% center}
+    .hero-foto::after{background:linear-gradient(180deg,rgba(15,28,46,.9) 0%,rgba(15,28,46,.84) 60%,rgba(15,28,46,.72) 100%)}
+    .hero .cont{padding-top:58px;padding-bottom:66px}
+    .hero p.sub{font-size:16px}
+    .hero .acciones .btn{flex:1 1 100%}
+    section{padding:60px 0}
+    .pasos{grid-template-columns:1fr}
+    .linea-c{padding:22px}
+    .linea-c h3{font-size:28px}
+    .precio b{font-size:24px}
+    .form{padding:16px}
+    .persona{padding:12px}
+    .p-fila{grid-template-columns:70px 1fr}
+    .campos{grid-template-columns:1fr}
+    .p-fila{grid-template-columns:58px 1fr;gap:8px}
+    .piezas{display:grid;grid-template-columns:1fr 1fr;gap:6px;width:100%}
+    .pz{flex-wrap:wrap;column-gap:6px;row-gap:0;padding:6px 9px;font-size:14px}
+    .pz small{flex-basis:100%;padding-left:23px}
+    .swatches{gap:6px}
+    .sw{padding:3px 8px 3px 3px}
+    .cta{padding:42px 22px;border-radius:22px}
+    .flota span{display:none}
+    .flota{padding:15px}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.08c-.24.68-1.42 1.31-1.95 1.36-.5.05-.97.24-3.26-.68-2.76-1.09-4.5-3.92-4.64-4.1-.13-.18-1.11-1.48-1.11-2.82s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.23.54.77 1.88.84 2.02.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.88.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-gancho" viewBox="0 0 24 24"><path d="M9.7 6.2a2.4 2.4 0 1 1 3.3 2.2c-.6.3-1 .8-1 1.5v.4"/><path d="M12 10.3 2.9 16.6c-.8.6-.4 1.9.6 1.9h17c1 0 1.4-1.3.6-1.9Z"/></symbol>
+  <symbol id="i-lista" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  <symbol id="i-msj" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></symbol>
+  <symbol id="i-bolsa" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-mas" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+</svg>
+
+<div class="aviso-demo">Demostración preparada para Trajes Zeke por <a href="https://overcloud.us" target="_blank" rel="noopener">Overcloud</a>. Los datos son de ejemplo.</div>
+
+<header>
+  <div class="cont barra">
+    <a class="logo" href="#inicio" aria-label="Trajes Zeke, inicio">
+      <span class="mono" aria-hidden="true">Z</span>
+      <span><span class="t1">Trajes</span> <span class="t2">Zeke</span></span>
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#trajes">Trajes</a>
+      <a href="#aparta">Aparta tu traje</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#visita">Dónde comprar</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5215585531331?text=Hola%20Trajes%20Zeke%2C%20quiero%20informaci%C3%B3n%20de%20sus%20trajes" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="hero-foto" role="img" aria-label="Sacos oscuros colgados en una sastrería con luz cálida"></div>
+    <div class="cont">
+      <span class="chip"><svg class="i" style="width:16px;height:16px"><use href="#i-check"/></svg> Adulto y niño · Todas las tallas</span>
+      <h1>Trajes clásicos, modernos y <em>para todos</em></h1>
+      <p class="sub">Trajes de adulto en 4 colores y trajes de niño en tallas 8 a 20. Elige el tuyo, apártalo por WhatsApp y recógelo en Sierra Guadarrama 90.</p>
+      <div class="acciones">
+        <a class="btn btn-wa" id="hero-wa" href="https://wa.me/5215585531331?text=Hola%20Trajes%20Zeke%2C%20quiero%20informaci%C3%B3n%20de%20sus%20trajes%20y%20la%20pr%C3%B3xima%20venta" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg> Escribir por WhatsApp</a>
+        <a class="btn btn-linea" href="#aparta">Aparta tu traje <svg class="i"><use href="#i-flecha"/></svg></a>
+      </div>
+      <div class="sellos">
+        <span><svg class="i"><use href="#i-check"/></svg> Saco y pantalón por separado</span>
+        <span><svg class="i"><use href="#i-check"/></svg> Tallas de niño 8 a 20</span>
+        <span><svg class="i"><use href="#i-check"/></svg> Apartado por WhatsApp</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="trajes">
+    <div class="cont">
+      <div class="titulo">
+        <div class="eti">Trajes</div>
+        <h2>Para papá y para los niños</h2>
+        <p>Saco y pantalón se venden por separado: lleva el traje completo o solo la pieza que te falta.</p>
+      </div>
+      <div class="catalogo" id="catalogo"></div>
+      <p class="nota-precios"><svg class="i"><use href="#i-info"/></svg> Precios de su venta de septiembre; se confirman por WhatsApp.</p>
+    </div>
+  </section>
+
+  <section id="aparta" class="aparta">
+    <div class="cont a-grid">
+      <div>
+        <div class="titulo">
+          <div class="eti">Aparta tu traje</div>
+          <h2>Aparta los trajes de toda la familia en un minuto</h2>
+          <p>Ideal para Yom Tov: arma aquí el pedido de papá y los niños, ve el total al momento y envíalo por WhatsApp para apartarlo.</p>
+        </div>
+        <ul class="lista-a">
+          <li><div class="n">1</div><div><b>Agrega a cada persona</b><span>Adulto o niño, talla, color y si es saco, pantalón o los dos.</span></div></li>
+          <li><div class="n">2</div><div><b>Ve el total al momento</b><span>Con los precios de saco y pantalón de cada traje.</span></div></li>
+          <li><div class="n">3</div><div><b>Envíalo por WhatsApp</b><span>Nos llega ya escrito y te confirmamos tallas y entrega.</span></div></li>
+        </ul>
+      </div>
+
+      <form class="form" id="pedido" onsubmit="return false">
+        <h3>Aparta tu traje</h3>
+        <p class="nota">Colores y precios de ejemplo. Con su catálogo real ponemos sus colores, fotos y precios.</p>
+        <div id="personas"></div>
+        <button type="button" class="agregar" id="agregar"><svg class="i" style="width:18px;height:18px"><use href="#i-mas"/></svg> Agregar otra persona</button>
+        <div class="campos">
+          <label>Tu nombre<input id="quien" autocomplete="name" placeholder="Ej. Familia Cohen"></label>
+          <label>Para cuándo<select id="cuando"><option value="para Yom Tov">Para Yom Tov</option><option value="para un evento">Para un evento</option><option value="sin fecha todavía">Sin fecha todavía</option></select></label>
+        </div>
+        <div class="total"><span id="resumen" aria-live="polite">Agrega al menos una pieza.</span><b id="total">$0</b></div>
+        <a class="btn btn-wa" id="enviar" href="#" target="_blank" rel="noopener" aria-disabled="true"><svg class="i"><use href="#i-wa"/></svg> Apartar por WhatsApp</a>
+        <p class="aclara">El apartado se confirma por WhatsApp. No se cobra nada en la página.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="cont">
+      <div class="titulo">
+        <div class="eti">Cómo funciona</div>
+        <h2>Tu traje en tres pasos</h2>
+      </div>
+      <div class="pasos">
+        <div class="p"><div class="ico"><svg class="i"><use href="#i-lista"/></svg></div><h3>Elige</h3><p>Adulto o niño, talla, color y las piezas que necesitas.</p></div>
+        <div class="p"><div class="ico"><svg class="i"><use href="#i-msj"/></svg></div><h3>Aparta por WhatsApp</h3><p>Envía tu pedido ya escrito al 55 8553 1331 y te confirmamos.</p></div>
+        <div class="p"><div class="ico"><svg class="i"><use href="#i-bolsa"/></svg></div><h3>Recoge</h3><p>Pasa por tus trajes a Sierra Guadarrama 90 en la fecha de la venta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visita" style="padding-top:0">
+    <div class="cont visita">
+      <div class="tarjeta">
+        <div class="titulo" style="margin:0">
+          <div class="eti">Dónde comprar</div>
+          <h2>Te esperamos en Lomas de Chapultepec</h2>
+        </div>
+        <div class="dato"><svg class="i"><use href="#i-pin"/></svg><div><b>Sierra Guadarrama 90</b><span>En el estacionamiento · Lomas de Chapultepec, Miguel Hidalgo</span></div></div>
+        <div class="dato"><svg class="i"><use href="#i-cal"/></svg><div><b>Próxima venta</b><span>Pregúntanos por WhatsApp las fechas y el horario.</span></div></div>
+        <div class="dato"><svg class="i"><use href="#i-tel"/></svg><div><b>55 8553 1331</b><span>Información y apartados por WhatsApp</span></div></div>
+        <a class="btn btn-claro" href="https://www.google.com/maps/search/?api=1&query=Sierra%20Guadarrama%2090%2C%20Lomas%20de%20Chapultepec%2C%20Ciudad%20de%20M%C3%A9xico" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg> Cómo llegar</a>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa de Sierra Guadarrama 90, Lomas de Chapultepec" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sierra+Guadarrama+90,+Lomas+de+Chapultepec,+Miguel+Hidalgo,+Ciudad+de+M%C3%A9xico&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="cont">
+      <div class="cta">
+        <h2>Tu traje listo para Yom Tov</h2>
+        <p>Pregúntanos por la próxima venta y aparta el tuyo.</p>
+        <a class="btn btn-oro" href="https://wa.me/5215585531331?text=Hola%20Trajes%20Zeke%2C%20%C2%BFcu%C3%A1ndo%20es%20la%20pr%C3%B3xima%20venta%3F" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg> Preguntar por la próxima venta</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="cont pie">
+    <span class="logo"><span><span class="t1">Trajes</span> <span class="t2">Zeke</span></span></span>
+    <span>Trajes de adulto y de niño · Sierra Guadarrama 90</span>
+    <span>Demo por <a href="https://overcloud.us" target="_blank" rel="noopener">Overcloud</a></span>
+  </div>
+</footer>
+
+<a class="btn btn-wa flota" href="https://wa.me/5215585531331?text=Hola%20Trajes%20Zeke" target="_blank" rel="noopener" aria-label="Escribir a Trajes Zeke por WhatsApp"><svg class="i"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+
+<script>
+  const WA = '5215585531331';
+  const liga = (t) => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+  const pesos = (n) => '$' + n.toLocaleString('en-US');
+
+  const LINEAS = {
+    adulto: { nombre: 'Adulto', etiqueta: 'Traje de adulto', saco: 2600, pantalon: 1200, tallas: [36, 38, 40, 42, 44, 46], nota: 'Clásicos y modernos' },
+    nino: { nombre: 'Niño', etiqueta: 'Traje de niño', saco: 2200, pantalon: 800, tallas: [8, 10, 12, 14, 16, 18, 20], nota: 'Diferentes colores y estilos', nuevo: true },
+  };
+  const COLORES = [['Color 1', '#16171b'], ['Color 2', '#1d2b4a'], ['Color 3', '#3f4348'], ['Color 4', '#9a9ea3']];
+
+  document.getElementById('catalogo').innerHTML = Object.entries(LINEAS).map(([k, l]) => `
+    <article class="linea-c" id="cat-${k}">
+      <div class="cab"><div><h3>Trajes de ${l.nombre.toLowerCase()}</h3><small>${l.nota}</small></div>${l.nuevo ? '<span class="nuevo">Nuevos</span>' : ''}</div>
+      <div class="precios">
+        <div class="precio"><span>Saco</span><b>${pesos(l.saco)}</b></div>
+        <div class="precio"><span>Pantalón</span><b>${pesos(l.pantalon)}</b></div>
+      </div>
+      <p class="completo">Traje completo (saco y pantalón): <b>${pesos(l.saco + l.pantalon)}</b></p>
+      <div><div class="sub-t">Tallas</div><div class="tallas">${l.tallas.map((t) => `<span>${t}</span>`).join('')}</div></div>
+      <div><div class="sub-t">Colores</div><div class="colores">${COLORES.map(([n, c]) => `<span class="color"><i class="muestra" style="background:${c}"></i>${n}</span>`).join('')}</div></div>
+      <a class="btn btn-claro" href="#aparta" data-linea="${k}">Apartar traje de ${l.nombre.toLowerCase()} <svg class="i" style="width:16px;height:16px"><use href="#i-flecha"/></svg></a>
+    </article>`).join('');
+
+  let personas = [];
+  const nueva = (tipo = 'adulto') => ({ tipo, talla: tipo === 'adulto' ? 40 : 12, color: 0, saco: true, pantalon: true, cant: 1 });
+  const precioDe = (p) => (p.saco ? LINEAS[p.tipo].saco : 0) + (p.pantalon ? LINEAS[p.tipo].pantalon : 0);
+  const piezasDe = (p) => p.saco && p.pantalon ? 'saco y pantalón' : p.saco ? 'solo saco' : p.pantalon ? 'solo pantalón' : '';
+
+  const cont = document.getElementById('personas');
+  function dibujar() {
+    cont.innerHTML = personas.map((p, i) => {
+      const l = LINEAS[p.tipo];
+      return `
+      <div class="persona" data-p="${i}">
+        <div class="p-cab"><b>Persona <span class="num">${i + 1}</span></b>${personas.length > 1 ? `<button type="button" class="quitar" data-quitar="${i}">Quitar</button>` : ''}</div>
+        <div class="seg" role="group" aria-label="Tipo de traje">
+          <button type="button" data-tipo="adulto" aria-pressed="${p.tipo === 'adulto'}">Adulto</button>
+          <button type="button" data-tipo="nino" aria-pressed="${p.tipo === 'nino'}">Niño</button>
+        </div>
+        <div class="p-fila"><label for="talla${i}">Talla</label><select id="talla${i}" data-talla>${l.tallas.map((t) => `<option ${t === p.talla ? 'selected' : ''}>${t}</option>`).join('')}</select></div>
+        <div class="p-fila"><span>Color</span><div class="swatches">${COLORES.map(([n, c], k) => `<button type="button" class="sw" data-color="${k}" aria-pressed="${p.color === k}" aria-label="${n}"><i style="background:${c}"></i>${n.replace('Color ', '')}</button>`).join('')}</div></div>
+        <div class="p-fila"><span>Piezas</span><div class="piezas">
+          <label class="pz"><input type="checkbox" data-pieza="saco" ${p.saco ? 'checked' : ''}> Saco <small>${pesos(l.saco)}</small></label>
+          <label class="pz"><input type="checkbox" data-pieza="pantalon" ${p.pantalon ? 'checked' : ''}> Pantalón <small>${pesos(l.pantalon)}</small></label>
+        </div></div>
+        <div class="p-pie">
+          <div class="paso" role="group" aria-label="Cuántos">
+            <button type="button" data-i="${i}" data-d="-1" aria-label="Quitar uno">−</button>
+            <output id="c${i}">${p.cant}</output>
+            <button type="button" data-i="${i}" data-d="1" aria-label="Agregar uno">+</button>
+          </div>
+          <div class="subt" id="s${i}">${pesos(precioDe(p) * p.cant)}<small>${p.cant} × ${pesos(precioDe(p))}</small></div>
+        </div>
+      </div>`;
+    }).join('');
+    pintar();
+  }
+
+  const enviar = document.getElementById('enviar');
+  const resumen = document.getElementById('resumen');
+  const totalEl = document.getElementById('total');
+  const quien = document.getElementById('quien');
+  const cuando = document.getElementById('cuando');
+
+  function pintar() {
+    const validas = personas.filter((p) => p.cant > 0 && (p.saco || p.pantalon));
+    const trajes = validas.reduce((a, p) => a + p.cant, 0);
+    const total = validas.reduce((a, p) => a + precioDe(p) * p.cant, 0);
+    resumen.textContent = trajes ? `${trajes} ${trajes === 1 ? 'traje' : 'trajes'} · Total` : 'Agrega al menos una pieza.';
+    totalEl.textContent = pesos(total);
+    const lineas = validas.map((p) => `• ${p.cant} × ${LINEAS[p.tipo].etiqueta} (${piezasDe(p)}), talla ${p.talla}, ${COLORES[p.color][0]}: ${pesos(precioDe(p) * p.cant)}`);
+    const nombre = quien.value.trim();
+    const texto = `Hola Trajes Zeke, quiero apartar ${cuando.value}${nombre ? ' (' + nombre + ')' : ''}:\n${lineas.join('\n')}\nTotal: ${pesos(total)}\n¿Me confirman disponibilidad y la próxima venta?`;
+    enviar.href = liga(texto);
+    enviar.setAttribute('aria-disabled', trajes ? 'false' : 'true');
+    personas.forEach((p, i) => {
+      const s = document.getElementById('s' + i);
+      if (s) s.innerHTML = `${pesos(precioDe(p) * p.cant)}<small>${p.cant} × ${pesos(precioDe(p))}</small>`;
+    });
+  }
+
+  cont.addEventListener('click', (e) => {
+    const card = e.target.closest('.persona'); if (!card) return;
+    const p = personas[+card.dataset.p];
+    const b = e.target.closest('button');
+    if (!b) return;
+    if (b.dataset.tipo && b.dataset.tipo !== p.tipo) {
+      p.tipo = b.dataset.tipo; p.talla = LINEAS[p.tipo].tallas.includes(p.talla) ? p.talla : (p.tipo === 'adulto' ? 40 : 12); dibujar();
+    } else if (b.dataset.color) {
+      p.color = +b.dataset.color; dibujar();
+    } else if (b.dataset.quitar) {
+      personas.splice(+b.dataset.quitar, 1); dibujar();
+    } else if (b.dataset.d) {
+      p.cant = Math.max(0, Math.min(20, p.cant + +b.dataset.d));
+      document.getElementById('c' + card.dataset.p).textContent = p.cant; pintar();
+    }
+  });
+  cont.addEventListener('change', (e) => {
+    const card = e.target.closest('.persona'); if (!card) return;
+    const p = personas[+card.dataset.p];
+    if (e.target.matches('[data-talla]')) p.talla = +e.target.value;
+    if (e.target.dataset.pieza) p[e.target.dataset.pieza] = e.target.checked;
+    dibujar();
+  });
+  document.getElementById('agregar').addEventListener('click', () => {
+    if (personas.length >= 8) return;
+    personas.push(nueva(personas.length ? 'nino' : 'adulto')); dibujar();
+  });
+  document.querySelectorAll('[data-linea]').forEach((a) => a.addEventListener('click', () => {
+    if (!personas.some((p) => p.tipo === a.dataset.linea)) { personas.push(nueva(a.dataset.linea)); dibujar(); }
+  }));
+  quien.addEventListener('input', pintar);
+  cuando.addEventListener('change', pintar);
+  personas = [nueva('adulto')];
+  dibujar();
+</script>
+</body>
+</html>
